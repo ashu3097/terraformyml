@@ -34,7 +34,7 @@ module "mod_virtualmachine" {
   vm_admin_pass = local.vm_local.vm_admin_pass
   output_rg_name=module.mod_resourcegrp.output_rg_name
   output_rg_location=module.mod_resourcegrp.output_rg_location
-  output_nic_id=module.mod_virtualnetwork.output_nic_id
+  output_nic_id=module.mod_networkinterface.output_nic_id
 
 
 }
