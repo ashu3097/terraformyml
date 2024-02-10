@@ -36,4 +36,4 @@ jobs:
       command: 'apply'
       workingDirectory: 'terraform-demo'
       commandOptions: '-auto-approve'
-      environmentServiceNameAzureRM: 'mysvc2'
+      environmentServiceNameAzureRM: 'Pay-As-You-Go(4f5247e7-3a1f-4020-ae0b-900086d984bf)'
