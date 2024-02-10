@@ -1,11 +1,11 @@
 resource "azurerm_network_interface" "nic" {
   name                = var.interface_name
-  location            = module.mod_resourcegrp.rg_location
-  resource_group_name = module.mod_resourcegrp.rg_name
+  location            = var.output_rg_location
+  resource_group_name = var.output_rg_name
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = module.mod_subnet.subnet_name
+    subnet_id                     = var.output_subnet_id
     private_ip_address_allocation = "Dynamic"
   }
 }
