@@ -29,11 +29,6 @@ jobs:
       command: 'validate'
       workingDirectory: 'terraform-demo'
 
-  - task: TerraformTaskV4@4
-    inputs:
-      provider: 'azurerm'
-      command: 'validate'
-      workingDirectory: 'terraform-demo'
 
   - task: TerraformTaskV4@4
     inputs:
