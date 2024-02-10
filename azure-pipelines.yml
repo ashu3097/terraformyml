@@ -36,4 +36,4 @@ jobs:
       command: 'apply'
       workingDirectory: 'terraform-demo'
       commandOptions: '-auto-approve'
-      environmentServiceNameAzureRM: 'mysvc'
+      environmentServiceNameAzureRM: 'mysvc2'
