@@ -14,3 +14,15 @@ variable "vm_admin_pass" {
   type=string
   default = "Testusr@1234567"
 }
+
+variable "output_rg_name" {
+  type = string
+}
+
+variable "output_rg_location"{
+    type = string
+}
+
+variable "output_nic_id" {
+  type = string
+}
