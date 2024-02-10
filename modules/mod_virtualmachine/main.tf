@@ -1,12 +1,12 @@
 resource "azurerm_windows_virtual_machine" "vm" {
   name                = var.vm_name
-  resource_group_name = module.mod_resourcegrp.rg_name
-  location            = module.mod_resourcegrp.rg_location
+  resource_group_name = var.output_rg_name
+  location            = var.output_rg_location
   size                = var.vm_size
   admin_username      = var.vm_admin_username
   admin_password      = var.vm_admin_pass
   network_interface_ids = [
-    module.mod_networkinterface.output_nic_id,
+    var.output_nic_id,
   ]
 
   os_disk {
