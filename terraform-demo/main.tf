@@ -21,7 +21,7 @@ module "mod_subnet" {
 module "mod_networkinterface"{
   source = "../modules/mod_networkinterface"
   interface_name = local.nic_local.interface_name
-  output_rg_name=module.rg_local.output_rg_name
+  output_rg_name=module.mod_resourcegrp.output_rg_name
   output_rg_location=module.mod_resourcegrp.output_rg_location
   output_subnet_id=module.mod_subnet.output_subnet_id
 
